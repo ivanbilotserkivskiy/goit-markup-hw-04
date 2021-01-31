@@ -173,7 +173,8 @@ letter-spacing: 0.02em;
     margin-right: 10px;
     fill: #757575;
 }
-.email-link:hover .mail-icon{
+.email-link:hover .mail-icon,
+.email-link:focus .mail-icon{
     fill: var(--accent-color);
 }
 .tel-icon {
@@ -183,7 +184,8 @@ letter-spacing: 0.02em;
     margin-right: 10px;
     fill: #757575;
 }
-.tel-link:hover .tel-icon{
+.tel-link:hover .tel-icon,
+.tel-link:focus .tel-icon{
     fill: var(--accent-color);
 }
 /* --end header section-- */
@@ -458,11 +460,12 @@ margin-bottom: 15px;
 }
 .customers-list-item-link:hover .customers-list-item-icon,
 .customers-list-item-link:focus .customers-list-item-icon {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
 }
 .customers-list-item:hover {
     border: 1px solid var(--accent-color);
 }
+
 /* End Customers */
 /* End About us */
 
@@ -649,7 +652,17 @@ color: #757575;
     background-color: var(--accent-color);
     color: #ffffff;
 }
+.portfolio-list-item-link{
+
+}
+.portfolio-list-item-link-div {
+    width: 370px;
+    height: 404px;
+}
 .portfolio-list-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-list-item-link:focus .portfolio-list-item-link-div {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* end portfolio */
